@@ -1,0 +1,10 @@
+This is my personal scratchpad project for learning different kind of techniques.
+My first project is a custom implementation for Linq to Objects (or the Enumerable class).
+My goal is to use this project to learn more about Test Driven Development and the
+techniques I work with.
+
+Future projects could be:
+- a custom Linq 2 SQL provider
+- a mocking framework
+- some test utilities
+- some usefull extension methods
