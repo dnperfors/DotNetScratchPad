@@ -1,0 +1,11 @@
+[Bb]in
+[Oo]bj
+[Dd]ebug/
+[Rr]elease/
+packages/
+*.suo
+*.sln.cache
+*.user
+Thumbs.db
+/.gitversion.tmp
+/.gitversion.short.tmp
