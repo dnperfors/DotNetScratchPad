@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xunit;
 using LearningLinq;
+using Xunit;
 using Xunit.Extensions;
 
 namespace LearningLinqTests
@@ -17,7 +17,7 @@ namespace LearningLinqTests
         [Theory]
         [InlineData(new int[] { 5, 5, 5, 5, 5 }, 5, 5)]
         [InlineData(new object[] { null, null }, null, 2)]
-        [InlineData(new char[] {}, 'x', 0)]
+        [InlineData(new char[] { }, 'x', 0)]
         public void Should_correctly_return_the_same_value_multiple_times<T>(T[] expected, T element, int count)
         {
             Assert.Equal(expected, Enumerable.Repeat(element, count));

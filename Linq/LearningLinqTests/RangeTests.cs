@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xunit;
 using LearningLinq;
+using Xunit;
 using Xunit.Extensions;
 
 namespace LearningLinqTests
