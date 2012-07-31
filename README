@@ -1,4 +1,6 @@
 This is my personal scratchpad project for learning different kind of techniques.
+All current projects are licensed under the Apache License version 2.0.
+
 My first project is a custom implementation for Linq to Objects (or the Enumerable class).
 My goal is to use this project to learn more about Test Driven Development and the
 techniques I work with.
