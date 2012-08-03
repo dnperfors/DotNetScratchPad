@@ -25,7 +25,9 @@ namespace LearningLinq
 
             ICollection<TSource> collection = source as ICollection<TSource>;
             if (collection != null)
+            {
                 return collection.Count;
+            }
 
             checked
             {

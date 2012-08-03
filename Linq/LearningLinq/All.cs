@@ -25,8 +25,13 @@ namespace LearningLinq
             if (predicate == null) throw new ArgumentNullException("predicate");
 
             foreach (TSource item in source)
+            {
                 if (!predicate(item))
+                {
                     return false;
+                }
+            }
+
             return true;
         }
     }

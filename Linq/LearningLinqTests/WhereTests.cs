@@ -49,7 +49,6 @@ namespace LearningLinqTests
         public void Should_give_index_to_predicate()
         {
             IEnumerable<int> source = new int[] { 2, 5, 3, 7, 1, 4 };
-
             Assert.Equal(new int[] { 1, 4 }, source.Where((x, index) => x < index));
         }
     }

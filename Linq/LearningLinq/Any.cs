@@ -24,7 +24,9 @@ namespace LearningLinq
             if (source == null) throw new ArgumentNullException("source");
 
             using (var enumerator = source.GetEnumerator())
+            {
                 return enumerator.MoveNext();
+            }
         }
 
         public static bool Any<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
@@ -33,8 +35,12 @@ namespace LearningLinq
             if (predicate == null) throw new ArgumentNullException("predicate");
 
             foreach (TSource item in source)
+            {
                 if (predicate(item))
+                {
                     return true;
+                }
+            }
             return false;
         }
     }
