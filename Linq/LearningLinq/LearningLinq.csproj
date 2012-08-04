@@ -34,6 +34,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregate.cs" />
     <Compile Include="All.cs" />
     <Compile Include="Any.cs" />
     <Compile Include="Concat.cs" />
