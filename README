@@ -5,6 +5,8 @@ My first project is a custom implementation for Linq to Objects (or the Enumerab
 My goal is to use this project to learn more about Test Driven Development and the
 techniques I work with.
 
+The second project (DotNetTests) is just a small project to test the .NET functionality.
+
 Future projects could be:
 - a custom Linq 2 SQL provider
 - a mocking framework
