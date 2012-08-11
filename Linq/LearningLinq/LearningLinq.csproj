@@ -43,6 +43,7 @@
     <Compile Include="Distinct.cs" />
     <Compile Include="Empty.cs" />
     <Compile Include="First.cs" />
+    <Compile Include="Intersect.cs" />
     <Compile Include="Last.cs" />
     <Compile Include="LongCount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
