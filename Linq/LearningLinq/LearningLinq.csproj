@@ -52,6 +52,7 @@
     <Compile Include="src\DefaultIfEmpty.cs" />
     <Compile Include="src\Distinct.cs" />
     <Compile Include="src\Empty.cs" />
+    <Compile Include="src\Except.cs" />
     <Compile Include="src\First.cs" />
     <Compile Include="src\Intersect.cs" />
     <Compile Include="src\Last.cs" />
@@ -71,9 +72,10 @@
     <Compile Include="tests\DefaultIfEmptyTests.cs" />
     <Compile Include="tests\DistinctTests.cs" />
     <Compile Include="tests\EmptyTests.cs" />
+    <Compile Include="tests\ExceptTests.cs" />
     <Compile Include="tests\FirstOrDefaultTests.cs" />
     <Compile Include="tests\FirstTests.cs" />
-    <Compile Include="tests\Intersect.cs" />
+    <Compile Include="tests\IntersectTests.cs" />
     <Compile Include="tests\LastOrDefaultTests.cs" />
     <Compile Include="tests\LastTests.cs" />
     <Compile Include="tests\LongCountTests.cs" />
