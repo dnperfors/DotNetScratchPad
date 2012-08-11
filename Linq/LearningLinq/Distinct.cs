@@ -22,11 +22,8 @@ namespace LearningLinq
 
             foreach (var item in source)
             {
-                if (givenItems.Contains(item))
-                    continue;
-
-                yield return item;
-                givenItems.Add(item);
+                if (givenItems.Add(item))
+                    yield return item;
             }
         }
     }
