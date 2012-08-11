@@ -5,8 +5,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linq", "Linq", "{BA1A2975-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningLinq", "Linq\LearningLinq\LearningLinq.csproj", "{EB3E768B-8E8A-4579-AED9-71280A70CB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningLinqTests", "Linq\LearningLinqTests\LearningLinqTests.csproj", "{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{71DD3C43-8243-4D10-BBBC-6FBA4412938C}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
@@ -24,10 +22,6 @@ Global
 		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,6 +32,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB3E768B-8E8A-4579-AED9-71280A70CB73} = {BA1A2975-C3E8-4FFE-8F8B-19695DDFCDB3}
-		{EFF6725B-E9AB-4A79-A35A-61FC760AF2AB} = {BA1A2975-C3E8-4FFE-8F8B-19695DDFCDB3}
 	EndGlobalSection
 EndGlobal
