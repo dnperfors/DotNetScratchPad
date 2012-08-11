@@ -21,7 +21,7 @@ namespace LearningLinq
     {
         public static IEnumerable<TSource> Union<TSource>(this IEnumerable<TSource> first, IEnumerable<TSource> second)
         {
-            return Union(first, second, EqualityComparer<TSource>.Default);
+            return Union(first, second, null);
         }
         public static IEnumerable<TSource> Union<TSource>(this IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer)
         {

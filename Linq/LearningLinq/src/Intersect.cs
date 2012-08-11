@@ -21,13 +21,13 @@ namespace LearningLinq
     {
         public static IEnumerable<TSource> Intersect<TSource>(this IEnumerable<TSource> first, IEnumerable<TSource> second)
         {
-            return Intersect(first, second, EqualityComparer<TSource>.Default);
+            return Intersect(first, second, null);
         }
         public static IEnumerable<TSource> Intersect<TSource>(this IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer)
         {
             if (first == null) throw new ArgumentNullException("first");
             if (second == null) throw new ArgumentNullException("second");
-            return IntersectImpl(first, second, comparer);
+            return IntersectImpl(first, second, comparer ?? EqualityComparer<TSource>.Default);
         }
 
         private static IEnumerable<TSource> IntersectImpl<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer)
