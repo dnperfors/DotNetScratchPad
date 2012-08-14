@@ -54,14 +54,18 @@
     <Compile Include="src\Empty.cs" />
     <Compile Include="src\Except.cs" />
     <Compile Include="src\First.cs" />
+    <Compile Include="src\IGrouping.cs" />
+    <Compile Include="src\ILookup.cs" />
     <Compile Include="src\Intersect.cs" />
     <Compile Include="src\Last.cs" />
     <Compile Include="src\LongCount.cs" />
+    <Compile Include="src\Lookup.cs" />
     <Compile Include="src\Range.cs" />
     <Compile Include="src\Repeat.cs" />
     <Compile Include="src\Select.cs" />
     <Compile Include="src\SelectMany.cs" />
     <Compile Include="src\Single.cs" />
+    <Compile Include="src\ToLookup.cs" />
     <Compile Include="src\Union.cs" />
     <Compile Include="src\Where.cs" />
     <Compile Include="tests\AggregateTests.cs" />
@@ -85,6 +89,7 @@
     <Compile Include="tests\SelectTests.cs" />
     <Compile Include="tests\SingleOrDefaultTests.cs" />
     <Compile Include="tests\SingleTests.cs" />
+    <Compile Include="tests\ToLookupTests.cs" />
     <Compile Include="tests\UnionTests.cs" />
     <Compile Include="tests\WhereTests.cs" />
   </ItemGroup>
