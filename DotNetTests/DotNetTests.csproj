@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="System\IntTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\UsingAndDisposingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
