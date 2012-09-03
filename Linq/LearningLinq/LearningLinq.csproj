@@ -57,6 +57,7 @@
     <Compile Include="src\IGrouping.cs" />
     <Compile Include="src\ILookup.cs" />
     <Compile Include="src\Intersect.cs" />
+    <Compile Include="src\Join.cs" />
     <Compile Include="src\Last.cs" />
     <Compile Include="src\LongCount.cs" />
     <Compile Include="src\Lookup.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="tests\FirstOrDefaultTests.cs" />
     <Compile Include="tests\FirstTests.cs" />
     <Compile Include="tests\IntersectTests.cs" />
+    <Compile Include="tests\JoinTests.cs" />
     <Compile Include="tests\LastOrDefaultTests.cs" />
     <Compile Include="tests\LastTests.cs" />
     <Compile Include="tests\LongCountTests.cs" />
