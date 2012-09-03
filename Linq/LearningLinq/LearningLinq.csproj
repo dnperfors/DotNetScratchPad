@@ -66,6 +66,10 @@
     <Compile Include="src\Select.cs" />
     <Compile Include="src\SelectMany.cs" />
     <Compile Include="src\Single.cs" />
+    <Compile Include="src\Skip.cs" />
+    <Compile Include="src\SkipWhile.cs" />
+    <Compile Include="src\Take.cs" />
+    <Compile Include="src\TakeWhile.cs" />
     <Compile Include="src\ToList.cs" />
     <Compile Include="src\ToLookup.cs" />
     <Compile Include="src\Union.cs" />
@@ -92,6 +96,10 @@
     <Compile Include="tests\SelectTests.cs" />
     <Compile Include="tests\SingleOrDefaultTests.cs" />
     <Compile Include="tests\SingleTests.cs" />
+    <Compile Include="tests\SkipTests.cs" />
+    <Compile Include="tests\SkipWhileTests.cs" />
+    <Compile Include="tests\TakeTests.cs" />
+    <Compile Include="tests\TakeWhileTests.cs" />
     <Compile Include="tests\ToListTests.cs" />
     <Compile Include="tests\ToLookupTests.cs" />
     <Compile Include="tests\UnionTests.cs" />
