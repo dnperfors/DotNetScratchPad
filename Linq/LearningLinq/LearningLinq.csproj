@@ -71,6 +71,7 @@
     <Compile Include="src\Take.cs" />
     <Compile Include="src\TakeWhile.cs" />
     <Compile Include="src\ToArray.cs" />
+    <Compile Include="src\ToDictionary.cs" />
     <Compile Include="src\ToList.cs" />
     <Compile Include="src\ToLookup.cs" />
     <Compile Include="src\Union.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="tests\TakeTests.cs" />
     <Compile Include="tests\TakeWhileTests.cs" />
     <Compile Include="tests\ToArrayTests.cs" />
+    <Compile Include="tests\ToDictionaryTests.cs" />
     <Compile Include="tests\ToListTests.cs" />
     <Compile Include="tests\ToLookupTests.cs" />
     <Compile Include="tests\UnionTests.cs" />
