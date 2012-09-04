@@ -77,6 +77,7 @@
     <Compile Include="src\ToLookup.cs" />
     <Compile Include="src\Union.cs" />
     <Compile Include="src\Where.cs" />
+    <Compile Include="src\Zip.cs" />
     <Compile Include="tests\AggregateTests.cs" />
     <Compile Include="tests\AllTests.cs" />
     <Compile Include="tests\AnyTests.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="tests\ToLookupTests.cs" />
     <Compile Include="tests\UnionTests.cs" />
     <Compile Include="tests\WhereTests.cs" />
+    <Compile Include="tests\ZipTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />
