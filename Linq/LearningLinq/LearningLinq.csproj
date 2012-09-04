@@ -47,6 +47,7 @@
     <Compile Include="src\Aggregate.cs" />
     <Compile Include="src\All.cs" />
     <Compile Include="src\Any.cs" />
+    <Compile Include="src\AsEnumerable.cs" />
     <Compile Include="src\Concat.cs" />
     <Compile Include="src\Count.cs" />
     <Compile Include="src\DefaultIfEmpty.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="tests\AggregateTests.cs" />
     <Compile Include="tests\AllTests.cs" />
     <Compile Include="tests\AnyTests.cs" />
+    <Compile Include="tests\AsEnumerableTests.cs" />
     <Compile Include="tests\ConcatTests.cs" />
     <Compile Include="tests\CountTests.cs" />
     <Compile Include="tests\DefaultIfEmptyTests.cs" />
