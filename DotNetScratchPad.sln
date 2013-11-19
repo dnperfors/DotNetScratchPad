@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linq", "Linq", "{BA1A2975-C3E8-4FFE-8F8B-19695DDFCDB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningLinq", "Linq\LearningLinq\LearningLinq.csproj", "{EB3E768B-8E8A-4579-AED9-71280A70CB73}"
@@ -10,7 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{71DD3C
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\nuget.exe = .nuget\nuget.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
-		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTests", "DotNetTests\DotNetTests.csproj", "{3B493F2F-5011-49CA-9090-A9C1C20E9794}"

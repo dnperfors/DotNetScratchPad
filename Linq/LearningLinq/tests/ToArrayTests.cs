@@ -16,7 +16,7 @@ using System;
 using System.Collections.Generic;
 using LearningLinq;
 using Xunit;
-using Rhino.Mocks;
+using Moq;
 
 namespace LearningLinqTests
 {
@@ -56,9 +56,9 @@ namespace LearningLinqTests
         [Fact]
         public void ToArray_MockedICollectionSource_ShouldNotCallGetEnumerator()
         {
-            ICollection<int> source = MockRepository.GenerateMock<ICollection<int>>();
-            source.ToArray();
-            source.AssertWasNotCalled(x => x.GetEnumerator());
+            var source = new Mock<ICollection<int>>();
+            source.Object.ToArray();
+            source.Verify(x => x.GetEnumerator(), Times.Never());
         }
     }
 }

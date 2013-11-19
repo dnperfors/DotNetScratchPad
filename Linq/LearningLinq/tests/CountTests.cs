@@ -15,7 +15,7 @@
 using System;
 using System.Collections.Generic;
 using LearningLinq;
-using Rhino.Mocks;
+using Moq;
 using Xunit;
 
 namespace LearningLinqTests
@@ -67,9 +67,9 @@ namespace LearningLinqTests
         [Fact]
         public void Should_call_count_on_generic_ICollection_when_source_is_ICollection()
         {
-            ICollection<int> source = MockRepository.GenerateMock<ICollection<int>>();
-            source.Count();
-            source.AssertWasCalled(x => x.Count);
+            var source = new Mock<ICollection<int>>();
+            source.Object.Count();
+            source.Verify(x => x.Count);
         }
     }
 }

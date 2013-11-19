@@ -17,6 +17,18 @@ namespace DotNetTests.System
             Assert.True(object1Copy.IsDisposed);
         }
 
+        [Fact]
+        public void Using_supports_null()
+        {
+            DisposableObject object1 = null;
+            Assert.DoesNotThrow(() =>
+            {
+                using (object1)
+                {
+                }
+            });
+        }
+
         private class DisposableObject : IDisposable
         {
             public bool IsDisposed = false;

@@ -15,7 +15,7 @@
 using System;
 using System.Collections.Generic;
 using LearningLinq;
-using Rhino.Mocks;
+using Moq;
 using Xunit;
 
 namespace LearningLinqTests
@@ -89,12 +89,12 @@ namespace LearningLinqTests
         [Fact]
         public void Should_not_iterate_when_source_is_IList()
         {
-            var source = MockRepository.GenerateMock<IList<int>>();
-            source.Stub(x => x.Count).Return(4);
-            source.Stub(x => x[4 - 1]).Return(5);
+            var source = new Mock<IList<int>>();
+            source.Setup(x => x.Count).Returns(4);
+            source.Setup(x => x[4 - 1]).Returns(5);
 
-            Assert.Equal(5, source.LastOrDefault());
-            source.AssertWasNotCalled(x => x.GetEnumerator());
+            Assert.Equal(5, source.Object.LastOrDefault());
+            source.Verify(x => x.GetEnumerator(), Times.Never());
         }
     }
 }
