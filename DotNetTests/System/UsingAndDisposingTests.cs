@@ -27,6 +27,7 @@ namespace DotNetTests.System
                 {
                 }
             });
+            Assert.True(typeof(IDisposable).IsAssignableFrom(typeof(DisposableObject)));
         }
 
         private class DisposableObject : IDisposable
