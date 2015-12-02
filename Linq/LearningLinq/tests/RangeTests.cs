@@ -42,7 +42,7 @@ namespace LearningLinqTests
         [InlineData(0, int.MaxValue)]
         public void Should_not_throw_exception_when_start_plus_count_is_less_or_equal_to_IntMaxValue(int start, int count)
         {
-            Assert.DoesNotThrow(() => Enumerable.Range(start, count));
+            Enumerable.Range(start, count);
         }
 
         [Theory]

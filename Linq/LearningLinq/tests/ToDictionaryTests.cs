@@ -58,8 +58,8 @@ namespace LearningLinqTests
             string[] source = { };
             IEqualityComparer<string> comparer = null;
 
-            Assert.DoesNotThrow(() => source.ToDictionary(x => x, comparer));
-            Assert.DoesNotThrow(() => source.ToDictionary(x => x, x => x, comparer));
+            source.ToDictionary(x => x, comparer);
+            source.ToDictionary(x => x, x => x, comparer);
         }
 
         [Fact]

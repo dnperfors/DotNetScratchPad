@@ -12,7 +12,15 @@ namespace WCFBowlingGameService.UnitTests
 
         public void Dispose()
         {
-            WcfServiceHost.StopService<IBowlingGame>();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                WcfServiceHost.StopService<IBowlingGame>();
+            }
         }
 
         private void ExecuteWithService(Action action)

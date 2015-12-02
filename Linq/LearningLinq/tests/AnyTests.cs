@@ -66,7 +66,7 @@ namespace LearningLinqTests
         {
             IEnumerable<int> source = new int[] { 10, 2, 0, 3 };
             var query = source.Select(x => 10 / x);
-            Assert.DoesNotThrow(() => query.Any(x => x > 2));
+            query.Any(x => x > 2);
         }
     }
 }

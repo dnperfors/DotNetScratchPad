@@ -19,24 +19,24 @@ namespace LearningLinq
 {
     sealed class Lookup<TKey, TElement> : ILookup<TKey, TElement>
     {
-        class Grouping<Tkey, TElement> : IGrouping<Tkey, TElement>
+        class Grouping<TGroupingKey, TGroupingElement> : IGrouping<TGroupingKey, TGroupingElement>
         {
-            private readonly Tkey key;
-            private readonly List<TElement> elements = new List<TElement>();
+            private readonly TGroupingKey key;
+            private readonly List<TGroupingElement> elements = new List<TGroupingElement>();
 
-            internal Grouping(Tkey key)
+            internal Grouping(TGroupingKey key)
             {
                 this.key = key;
             }
 
-            internal void Add(TElement element)
+            internal void Add(TGroupingElement element)
             {
                 elements.Add(element);
             }
 
-            public Tkey Key { get { return key; } }
+            public TGroupingKey Key { get { return key; } }
 
-            public IEnumerator<TElement> GetEnumerator()
+            public IEnumerator<TGroupingElement> GetEnumerator()
             {
                 return elements.Select(x => x).GetEnumerator();
             }
