@@ -1,22 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linq", "Linq", "{BA1A2975-C3E8-4FFE-8F8B-19695DDFCDB3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningLinq", "Linq\LearningLinq\LearningLinq.csproj", "{EB3E768B-8E8A-4579-AED9-71280A70CB73}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{71DD3C43-8243-4D10-BBBC-6FBA4412938C}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\nuget.exe = .nuget\nuget.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTests", "DotNetTests\DotNetTests.csproj", "{3B493F2F-5011-49CA-9090-A9C1C20E9794}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBowlingGameService", "WCFBowlingGameService\WCFBowlingGameService.csproj", "{EEB8D677-C051-4FA2-8E9B-9CF3ACB82E0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netcoretests", "netcoretests\netcoretests.csproj", "{72628883-9C42-4DB9-9D19-BEF990FF9599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,23 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB3E768B-8E8A-4579-AED9-71280A70CB73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B493F2F-5011-49CA-9090-A9C1C20E9794}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEB8D677-C051-4FA2-8E9B-9CF3ACB82E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEB8D677-C051-4FA2-8E9B-9CF3ACB82E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEB8D677-C051-4FA2-8E9B-9CF3ACB82E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEB8D677-C051-4FA2-8E9B-9CF3ACB82E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72628883-9C42-4DB9-9D19-BEF990FF9599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72628883-9C42-4DB9-9D19-BEF990FF9599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72628883-9C42-4DB9-9D19-BEF990FF9599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72628883-9C42-4DB9-9D19-BEF990FF9599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{EB3E768B-8E8A-4579-AED9-71280A70CB73} = {BA1A2975-C3E8-4FFE-8F8B-19695DDFCDB3}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {055B0B36-7CA0-4134-849F-EBA511D3F6B4}
 	EndGlobalSection
 EndGlobal

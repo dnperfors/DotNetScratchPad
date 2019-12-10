@@ -9,3 +9,5 @@ packages/
 Thumbs.db
 /.gitversion.tmp
 /.gitversion.short.tmp
+/.vs
+*.ncrunchsolution
