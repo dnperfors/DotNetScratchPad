@@ -15,6 +15,18 @@ namespace httpclient.testserver
         public async Task MockGetRequest()
         {
             var server = new TestServer();
+
+            using var client = new HttpClient(server);
+
+            var result = await client.GetAsync("https://httbin.org/get");
+
+            Check.That(result.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        }
+
+        [Fact]
+        public async Task MockCustomGetRequest()
+        {
+            var server = new TestServer();
             server.RespondWith(HttpStatusCode.NotFound);
 
             using var client = new HttpClient(server);
@@ -23,7 +35,7 @@ namespace httpclient.testserver
             
             Check.That(result.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
         }
-
+        /*
         [Fact]
         public async Task MockTimeout()
         {
@@ -35,6 +47,30 @@ namespace httpclient.testserver
             var result = await client.GetAsync("https://httpbin.org/get");
 
             Check.That(result.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        }*/
+
+        [Fact]
+        public async Task AssertRequest()
+        {
+            var server = new TestServer();
+
+            using var client = new HttpClient(server);
+
+            var result = await client.GetAsync("https://httpbin.org/get");
+
+            Check.That(server.Requests).HasMadeCalls();
+        }
+
+        [Fact]
+        public async Task AssertRequestWithMethod()
+        {
+            var server = new TestServer();
+
+            using var client = new HttpClient(server);
+
+            var result = await client.GetAsync("https://httpbin.org/get");
+
+            Assert.Throws<HttpRequestAssertException>(() => server.HasRequests().WithMethod(HttpMethod.Get).WithVersion("1.0"));
         }
     }
 }
