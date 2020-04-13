@@ -1,9 +1,7 @@
 ﻿using NFluent;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -35,7 +33,7 @@ namespace httpclient.testserver
             
             Check.That(result.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
         }
-        /*
+        
         [Fact]
         public async Task MockTimeout()
         {
@@ -44,10 +42,17 @@ namespace httpclient.testserver
 
             using var client = new HttpClient(server);
 
-            var result = await client.GetAsync("https://httpbin.org/get");
+            await client.GetAsync("https://httpbin.org/get");
+        }
 
-            Check.That(result.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        }*/
+        [Fact]
+        public async Task RealTimeout()
+        {
+            using var client = new HttpClient();
+            client.Timeout = TimeSpan.FromSeconds(10);
+
+            await client.GetAsync("https://httpbin.org/drip?duration=10&numbytes=10&code=200&delay=10");
+        }
 
         [Fact]
         public async Task AssertRequest()
